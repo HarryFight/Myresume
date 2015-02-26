@@ -1,7 +1,8 @@
 $(function(){
-    $('.main').onepage_scroll({
-        sectionContainer: '.page',
-        updateURL: true,
-        animationTime: 700
+    $('.main').fullpage({
+        verticalCentered:false,
+        anchors:['intro','work','skill','code','link','end'],
+        menu:true,
+        navigation:true,
     });
 });

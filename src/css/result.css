@@ -1,4 +1,7 @@
-.main .page {
+.main {
+  font-family: 'exo', 'Microsoft YaHei';
+}
+.main .section {
   background-size: 100%;
 }
 .main .page1 {
