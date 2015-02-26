@@ -1,0 +1,25 @@
+.main .page {
+  background-size: 100%;
+}
+.main .page1 {
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/aboutme.jpg");
+  background-color: #1bbc9b;
+}
+.main .page2 {
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/work.jpg");
+  background-color: #FF7F50;
+}
+.main .page3 {
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/night.jpg");
+  background-color: #4BBFC3;
+}
+.main .page4 {
+  background-color: #f90;
+}
+p.title {
+  position: relative;
+  top: 35%;
+  font-family: "Exo", 'Microsoft YaHei';
+  color: #fff;
+  text-align: center;
+}
