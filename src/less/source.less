@@ -1,10 +1,11 @@
 @Url_resource:'http://7vzrbt.com1.z0.glb.clouddn.com';
 
 .main{
-  font-family: 'exo','Microsoft YaHei';
 
   .section{
     background-size: 100%;
+
+    p{ position: relative; top: 35%; font-family: "Exo",'Microsoft YaHei'; color: #fff; text-align: center;}
   }
   .page1{
     background-image:url("@{Url_resource}/intro.jpg");
@@ -32,4 +33,24 @@
   }
 }
 
-p.title { position: relative; top: 35%; font-family: "Exo",'Microsoft YaHei'; color: #fff; text-align: center;}
+//箭头
+.down{
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  left: 50%;
+  width: 50px;
+  height: 28px;
+  margin-left: -25px;
+  background: url('../../lib/down.png');
+}
+
+//所有激活后的样式
+.active{
+
+  .down{
+    -webkit-animation:bounce 1s 2s ease both;
+    -moz-animation:bounce 1s 2s ease both;
+  }
+}
+

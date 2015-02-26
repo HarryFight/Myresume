@@ -1,8 +1,12 @@
-.main {
-  font-family: 'exo', 'Microsoft YaHei';
-}
 .main .section {
   background-size: 100%;
+}
+.main .section p {
+  position: relative;
+  top: 35%;
+  font-family: "Exo", 'Microsoft YaHei';
+  color: #fff;
+  text-align: center;
 }
 .main .page1 {
   background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/intro.jpg");
@@ -28,10 +32,17 @@
   background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/thanks.jpg");
   background-color: #D95555;
 }
-p.title {
-  position: relative;
-  top: 35%;
-  font-family: "Exo", 'Microsoft YaHei';
-  color: #fff;
-  text-align: center;
+.down {
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  left: 50%;
+  width: 50px;
+  height: 28px;
+  margin-left: -25px;
+  background: url('../../lib/down.png');
+}
+.active .down {
+  -webkit-animation: bounce 1s 2s ease both;
+  -moz-animation: bounce 1s 2s ease both;
 }
