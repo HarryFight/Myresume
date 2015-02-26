@@ -4,12 +4,21 @@
 
   .section{
     background-size: 100%;
-
-    p{ position: relative; top: 35%; font-family: "Exo",'Microsoft YaHei'; color: #fff; text-align: center;}
+    font-family: "Exo",'Microsoft YaHei';
+    color: #fff;
+    text-align: center;
   }
   .page1{
     background-image:url("@{Url_resource}/intro.jpg");
     background-color: #1bbc9b;
+
+    img{margin-top: 180px}
+    h1{margin-bottom: 40px}
+    p{margin-top: 10px;}
+    h3{
+      margin-top: 40px;
+      i{color: cornflowerblue;}
+    }
   }
   .page2 {
     background-image:url("@{Url_resource}/night.jpg");
@@ -42,7 +51,7 @@
   width: 50px;
   height: 28px;
   margin-left: -25px;
-  background: url('../../lib/down.png');
+  background: url('../images/down.png');
 }
 
 //所有激活后的样式

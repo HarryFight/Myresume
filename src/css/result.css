@@ -1,9 +1,5 @@
 .main .section {
   background-size: 100%;
-}
-.main .section p {
-  position: relative;
-  top: 35%;
   font-family: "Exo", 'Microsoft YaHei';
   color: #fff;
   text-align: center;
@@ -11,6 +7,21 @@
 .main .page1 {
   background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/intro.jpg");
   background-color: #1bbc9b;
+}
+.main .page1 img {
+  margin-top: 180px;
+}
+.main .page1 h1 {
+  margin-bottom: 40px;
+}
+.main .page1 p {
+  margin-top: 10px;
+}
+.main .page1 h3 {
+  margin-top: 40px;
+}
+.main .page1 h3 i {
+  color: cornflowerblue;
 }
 .main .page2 {
   background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/night.jpg");
@@ -40,7 +51,7 @@
   width: 50px;
   height: 28px;
   margin-left: -25px;
-  background: url('../../lib/down.png');
+  background: url('../images/down.png');
 }
 .active .down {
   -webkit-animation: bounce 1s 2s ease both;

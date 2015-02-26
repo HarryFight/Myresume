@@ -11,7 +11,11 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 a{
     text-decoration:none;
 }
+img{
+    border: none;
+}
 
+/*加载提示样式*/
 .section_loading{
     position: fixed;
     top:0;
