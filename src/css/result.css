@@ -4,6 +4,10 @@
   color: #fff;
   text-align: center;
 }
+.main .section a {
+  font-family: "Exo", 'Microsoft YaHei';
+  color: #551A8B;
+}
 .main .page1 {
   background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/intro.jpg");
   background-color: #1bbc9b;
@@ -26,6 +30,21 @@
 .main .page2 {
   background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/night.jpg");
   background-color: #FF7F50;
+  border: 1px solid transparent;
+}
+.main .page2 h1 {
+  margin-top: 20px;
+}
+.main .page2 .slide {
+  text-align: left;
+}
+.main .page2 .slide p {
+  margin-top: 10px;
+}
+.main .page2 .slide .one {
+  width: 40%;
+  text-align: center;
+  margin: 200px auto 0px;
 }
 .main .page3 {
   background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/code_b.jpg");
@@ -56,4 +75,7 @@
 .active .down {
   -webkit-animation: bounce 1s 2s ease both;
   -moz-animation: bounce 1s 2s ease both;
+}
+.fp-next {
+  margin-right: 30px;
 }
