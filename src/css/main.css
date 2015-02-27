@@ -14,6 +14,7 @@ a{
 img{
     border: none;
 }
+ul,li{list-style: none}
 
 /*加载提示样式*/
 .section_loading{

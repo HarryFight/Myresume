@@ -71,10 +71,23 @@
   height: 28px;
   margin-left: -25px;
   background: url('../images/down.png');
+  z-index: 99;
 }
 .active .down {
   -webkit-animation: bounce 1s 2s ease both;
   -moz-animation: bounce 1s 2s ease both;
+}
+#zoom .close {
+  background: transparent url('../images/close.png') no-repeat 50% 50%;
+}
+#zoom .previous {
+  background: url('../images/arrows.png') no-repeat 0 0;
+}
+#zoom .next {
+  background: url('../images/arrows.png') no-repeat 100% 0;
+}
+#zoom .content.loading {
+  background-image: url('../images/loading.gif');
 }
 .fp-next {
   margin-right: 30px;
