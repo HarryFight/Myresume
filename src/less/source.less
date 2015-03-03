@@ -1,5 +1,5 @@
-@Url_resources:'http://7vzrbt.com1.z0.glb.clouddn.com';
-@Url_resource:'../images/dev';
+@Url_resource:'http://7vzrbt.com1.z0.glb.clouddn.com';
+@Url_resource_dev:'../images/dev';
 
 .main{
 
@@ -12,6 +12,8 @@
       font-family: "Exo",'Microsoft YaHei';
       color: #551A8B;
     }
+
+    border: 1px solid transparent;//fix margin
   }
 
   .saying{
@@ -27,9 +29,9 @@
   .page1{
     background-image:url("@{Url_resource}/intro.jpg");
     background-color: #1bbc9b;
-
-    img{margin-top: 180px}
-    h1{margin-bottom: 40px}
+    .head{margin-top: 20px}
+    img{margin-top: 100px}
+    h1{margin-bottom: 5%}
     p{margin-top: 10px;}
     h2{
       margin-top: 30px;
@@ -39,7 +41,6 @@
   .page2 {
     background-image:url("@{Url_resource}/thanks.jpg");
     background-color: #FF7F50;
-    border: 1px solid transparent;
 
     .gallery{
       li{text-align: center}
@@ -154,7 +155,6 @@
     background-image:url("@{Url_resource}/keyboard.jpg");
     background-color: #4BBFC3;
 
-    border: 1px solid transparent;
     h1{margin-top: 20px}
 
     ul{
@@ -224,7 +224,6 @@
     background-color: #f90;
 
     h1{margin-top: 20px}
-    border: 1px solid transparent;
 
     div{
       width: 65%;
@@ -238,6 +237,7 @@
     .for_me{
       color: #2a7da9;
       margin-top: 20px;
+      font-size: 22px;
       a{
         color: #FFFFff;
       }
@@ -247,7 +247,6 @@
     background-image:url("@{Url_resource}/night.jpg");
     background-color: #BAC8D9;
     h1{margin-top: 20px}
-    border: 1px solid transparent;
 
     ul{
       width: 25%;
@@ -284,12 +283,31 @@
     animation:bounce 1s 2s ease;
   }
   .content{
-    
+    -webkit-animation:     fadeinT 1s ease;
+    -moz-animation:     fadeinT 1s ease;
+    animation:     fadeinT 1s ease;
+  }
+  .slide{
+    .one,.two,.three,.four,.five,.six,.seven{
+      -webkit-animation: flipinY 1s ease;
+      -moz-animation: flipinY 1s ease;
+      animation: flipinY 1s ease;
+    }
   }
   .skill_list{
-    -webkit-animation: fadeinT 1s ease;
-    -moz-animation: fadeinT 1s ease;
-    animation: fadeinT 1s ease;
+    -webkit-animation: bouncein 1s ease;
+    -moz-animation: bouncein 1s ease;
+    animation: bouncein 1s ease;
+  }
+  .about{
+    -webkit-animation: fadeinB 1s ease;
+    -moz-animation: fadeinB 1s ease;
+    animation: fadeinB 1s ease;
+  }
+  .contact{
+    -webkit-animation: shake 1s ease;
+    -moz-animation: shake 1s ease;
+    animation: shake 1s ease;
   }
 }
 

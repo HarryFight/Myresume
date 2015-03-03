@@ -3,6 +3,7 @@
   font-family: "Exo", 'Microsoft YaHei';
   color: #fff;
   text-align: center;
+  border: 1px solid transparent;
 }
 .main .section a {
   font-family: "Exo", 'Microsoft YaHei';
@@ -19,14 +20,17 @@
   font-style: italic;
 }
 .main .page1 {
-  background-image: url("../images/dev/intro.jpg");
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/intro.jpg");
   background-color: #1bbc9b;
 }
+.main .page1 .head {
+  margin-top: 20px;
+}
 .main .page1 img {
-  margin-top: 180px;
+  margin-top: 100px;
 }
 .main .page1 h1 {
-  margin-bottom: 40px;
+  margin-bottom: 5%;
 }
 .main .page1 p {
   margin-top: 10px;
@@ -38,9 +42,8 @@
   color: cornflowerblue;
 }
 .main .page2 {
-  background-image: url("../images/dev/thanks.jpg");
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/thanks.jpg");
   background-color: #FF7F50;
-  border: 1px solid transparent;
 }
 .main .page2 .gallery li {
   text-align: center;
@@ -145,9 +148,8 @@
   margin: 0 auto;
 }
 .main .page3 {
-  background-image: url("../images/dev/keyboard.jpg");
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/keyboard.jpg");
   background-color: #4BBFC3;
-  border: 1px solid transparent;
 }
 .main .page3 h1 {
   margin-top: 20px;
@@ -225,9 +227,8 @@
   border-left: 3px solid #0094fb;
 }
 .main .page4 {
-  background-image: url("../images/dev/note.jpg");
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/note.jpg");
   background-color: #f90;
-  border: 1px solid transparent;
 }
 .main .page4 h1 {
   margin-top: 20px;
@@ -244,14 +245,14 @@
 .main .page4 .for_me {
   color: #2a7da9;
   margin-top: 20px;
+  font-size: 22px;
 }
 .main .page4 .for_me a {
   color: #FFFFff;
 }
 .main .page5 {
-  background-image: url("../images/dev/night.jpg");
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/night.jpg");
   background-color: #BAC8D9;
-  border: 1px solid transparent;
 }
 .main .page5 h1 {
   margin-top: 20px;
@@ -282,10 +283,36 @@
   -moz-animation: bounce 1s 2s ease;
   animation: bounce 1s 2s ease;
 }
-.active .skill_list {
+.active .content {
   -webkit-animation: fadeinT 1s ease;
   -moz-animation: fadeinT 1s ease;
   animation: fadeinT 1s ease;
+}
+.active .slide .one,
+.active .slide .two,
+.active .slide .three,
+.active .slide .four,
+.active .slide .five,
+.active .slide .six,
+.active .slide .seven {
+  -webkit-animation: flipinY 1s ease;
+  -moz-animation: flipinY 1s ease;
+  animation: flipinY 1s ease;
+}
+.active .skill_list {
+  -webkit-animation: bouncein 1s ease;
+  -moz-animation: bouncein 1s ease;
+  animation: bouncein 1s ease;
+}
+.active .about {
+  -webkit-animation: fadeinB 1s ease;
+  -moz-animation: fadeinB 1s ease;
+  animation: fadeinB 1s ease;
+}
+.active .contact {
+  -webkit-animation: shake 1s ease;
+  -moz-animation: shake 1s ease;
+  animation: shake 1s ease;
 }
 .fp-next {
   margin-right: 30px;

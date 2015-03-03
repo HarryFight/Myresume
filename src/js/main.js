@@ -6,5 +6,5 @@ $(function(){
         navigation:true
     });
 
-    $('.section_loading').fadeOut(1000);
+    $('.section_loading').fadeOut(3500);
 });
