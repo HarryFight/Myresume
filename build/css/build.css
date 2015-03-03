@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/*字体引用*/
+@font-face{font-family:Exo;font-style:normal;font-weight:100;src:local("Exo Thin"),local("Exo-Thin"),url(http://redrock.u.qiniudn.com/ghostwill/ExoThin.woff) format("woff")}
+@font-face{font-family:Exo;font-style:normal;font-weight:400;src:local("Exo Regular"),local("Exo-Regular"),url(http://redrock.u.qiniudn.com/ghostwill/ExoRegular.woff) format("woff")}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration:none;
+}
+img{
+    border: none;
+}
+ul,li{list-style: none}
+
+/*加载提示样式*/
+.section_loading{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: #eee;
+}
+.section_loading p{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -150px;
+    line-height: 50px;
+    text-align:center;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #777;
+}
+.main .section {
+  background-size: 100%;
+  font-family: "Exo", 'Microsoft YaHei';
+  color: #fff;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.main .section a {
+  font-family: "Exo", 'Microsoft YaHei';
+  color: #551A8B;
+}
+.main .saying {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: 80%;
+  height: 28px;
+  margin-left: -40%;
+  z-index: 99;
+  font-style: italic;
+}
+.main .page1 {
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/intro.jpg");
+  background-color: #1bbc9b;
+}
+.main .page1 .head {
+  margin-top: 20px;
+}
+.main .page1 img {
+  margin-top: 100px;
+}
+.main .page1 h1 {
+  margin-bottom: 5%;
+}
+.main .page1 p {
+  margin-top: 10px;
+}
+.main .page1 h2 {
+  margin-top: 30px;
+}
+.main .page1 h2 i {
+  color: cornflowerblue;
+}
+.main .page2 {
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/thanks.jpg");
+  background-color: #FF7F50;
+}
+.main .page2 .gallery li {
+  text-align: center;
+}
+.main .page2 h1 {
+  margin-top: 20px;
+}
+.main .page2 .slide {
+  text-align: left;
+  margin-top: 120px;
+}
+.main .page2 .slide p {
+  margin-top: 10px;
+}
+.main .page2 .slide i {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+.main .page2 .slide i,
+.main .page2 .slide a {
+  margin-top: 20px;
+  color: cornflowerblue;
+  display: block;
+}
+.main .page2 .slide .one {
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+}
+.main .page2 .slide .two .gallery {
+  float: left;
+  width: 30%;
+  margin-left: 10%;
+}
+.main .page2 .slide .two .pro_intro {
+  float: right;
+  width: 35%;
+  margin-right: 20%;
+}
+.main .page2 .slide .three .gallery {
+  float: right;
+  width: 30%;
+  margin-right: 10%;
+}
+.main .page2 .slide .three .pro_intro {
+  float: left;
+  width: 35%;
+  margin-left: 20%;
+}
+.main .page2 .slide .four {
+  margin-top: -80px;
+}
+.main .page2 .slide .four .pro_intro {
+  width: 50%;
+  margin: 0 auto;
+}
+.main .page2 .slide .five .gallery {
+  margin-top: -80px;
+  float: left;
+  width: 30%;
+  margin-left: 10%;
+}
+.main .page2 .slide .five .pro_intro {
+  float: right;
+  width: 35%;
+  margin-right: 10%;
+}
+.main .page2 .slide .six {
+  width: 75%;
+  height: 60%;
+  margin: 0 auto;
+}
+.main .page2 .slide .six h2 {
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+.main .page2 .slide .six .pro_code {
+  float: left;
+  width: 22%;
+  padding: 0 2% 2% 2%;
+  margin: 0 2%;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.main .page2 .slide .six .pro_code h3 {
+  text-align: center;
+}
+.main .page2 .slide .six .pro_code:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.main .page2 .slide .seven {
+  margin-top: 10%;
+}
+.main .page2 .slide .seven p {
+  text-align: center;
+  width: 60%;
+  font-size: 48px;
+  margin: 0 auto;
+}
+.main .page3 {
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/keyboard.jpg");
+  background-color: #4BBFC3;
+}
+.main .page3 h1 {
+  margin-top: 20px;
+}
+.main .page3 ul {
+  width: 55%;
+  margin: 10% auto 0;
+  text-align: left;
+}
+.main .page3 ul li {
+  height: 40px;
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+  line-height: 40px;
+}
+.main .page3 ul li i {
+  float: left;
+  font-style: normal;
+  width: 16%;
+  text-align: center;
+}
+.main .page3 ul li div {
+  width: 80%;
+  float: left;
+  padding-left: 20px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+.main .page3 ul .fe:hover div,
+.main .page3 ul .rd:hover div,
+.main .page3 ul .tools:hover div {
+  background-image: -webkit-linear-gradient(left, #f5c9f6, #8aebf9);
+}
+.main .page3 ul .a:hover div {
+  width: 70%;
+}
+.main .page3 ul .b:hover div {
+  width: 50%;
+}
+.main .page3 ul .c:hover div {
+  width: 40%;
+}
+.main .page3 ul .d:hover div {
+  width: 50%;
+}
+.main .page3 ul .e:hover div {
+  width: 30%;
+}
+.main .page3 ul .f:hover div {
+  width: 25%;
+}
+.main .page3 ul .g:hover div {
+  width: 40%;
+}
+.main .page3 ul .fe {
+  color: #ff742a;
+}
+.main .page3 ul .fe div {
+  background-color: rgba(255, 246, 221, 0.8);
+  border-left: 3px solid #fdbc40;
+}
+.main .page3 ul .rd {
+  color: #078d11;
+}
+.main .page3 ul .rd div {
+  background-color: rgba(212, 243, 202, 0.8);
+  border-left: 3px solid #31d200;
+}
+.main .page3 ul .tools {
+  color: #2a7da9;
+}
+.main .page3 ul .tools div {
+  background-color: rgba(209, 239, 254, 0.8);
+  border-left: 3px solid #0094fb;
+}
+.main .page4 {
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/note.jpg");
+  background-color: #f90;
+}
+.main .page4 h1 {
+  margin-top: 20px;
+}
+.main .page4 div {
+  width: 65%;
+  margin: 6% auto 0;
+  text-align: left;
+  font-size: 18px;
+  text-indent: 2em;
+  line-height: 2;
+  padding: 20px;
+}
+.main .page4 .for_me {
+  color: #2a7da9;
+  margin-top: 20px;
+  font-size: 22px;
+}
+.main .page4 .for_me a {
+  color: #FFFFff;
+}
+.main .page5 {
+  background-image: url("http://7vzrbt.com1.z0.glb.clouddn.com/night.jpg");
+  background-color: #BAC8D9;
+}
+.main .page5 h1 {
+  margin-top: 20px;
+}
+.main .page5 ul {
+  width: 25%;
+  margin: 8% auto 0;
+  font-size: 20px;
+  line-height: 2;
+  padding: 20px;
+}
+.main .page5 p {
+  margin-top: 30px;
+  font-size: 48px;
+}
+.down {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 50px;
+  height: 28px;
+  margin-left: -25px;
+  background: url('http://7vzrbt.com1.z0.glb.clouddn.com/down.png');
+  z-index: 99;
+}
+.active .down {
+  -webkit-animation: bounce 1s 2s ease;
+  -moz-animation: bounce 1s 2s ease;
+  animation: bounce 1s 2s ease;
+}
+.active .content {
+  -webkit-animation: fadeinT 1s ease;
+  -moz-animation: fadeinT 1s ease;
+  animation: fadeinT 1s ease;
+}
+.active .slide .one,
+.active .slide .two,
+.active .slide .three,
+.active .slide .four,
+.active .slide .five,
+.active .slide .six,
+.active .slide .seven {
+  -webkit-animation: flipinY 1s ease;
+  -moz-animation: flipinY 1s ease;
+  animation: flipinY 1s ease;
+}
+.active .skill_list {
+  -webkit-animation: bouncein 1s ease;
+  -moz-animation: bouncein 1s ease;
+  animation: bouncein 1s ease;
+}
+.active .about {
+  -webkit-animation: fadeinB 1s ease;
+  -moz-animation: fadeinB 1s ease;
+  animation: fadeinB 1s ease;
+}
+.active .contact {
+  -webkit-animation: shake 1s ease;
+  -moz-animation: shake 1s ease;
+  animation: shake 1s ease;
+}
+.fp-next {
+  margin-right: 30px;
+}
+#zoom .close {
+  background: transparent url('http://7vzrbt.com1.z0.glb.clouddn.com/close.png') no-repeat 50% 50%;
+}
+#zoom .previous {
+  background: url('http://7vzrbt.com1.z0.glb.clouddn.com/arrows.png') no-repeat 0 0;
+}
+#zoom .next {
+  background: url('http://7vzrbt.com1.z0.glb.clouddn.com/arrows.png') no-repeat 100% 0;
+}
+#zoom .content.loading {
+  background-image: url('http://7vzrbt.com1.z0.glb.clouddn.com/loading.gif');
+}
