@@ -1,6 +1,7 @@
 @Url_resource:'http://7vzrbt.com1.z0.glb.clouddn.com';
 @Url_resource_dev:'../images/dev';
-
+@Url_images:'http://7vzrbt.com1.z0.glb.clouddn.com';
+@Url_images_dev:'../images';
 .main{
 
   .section{
@@ -270,7 +271,7 @@
   width: 50px;
   height: 28px;
   margin-left: -25px;
-  background: url('../images/down.png');
+  background: url('@{Url_images}/down.png');
   z-index: 99;
 }
 
@@ -318,15 +319,15 @@
 }
 #zoom{
   .close{
-    background: transparent url('../images/close.png') no-repeat 50% 50%;
+    background: transparent url('@{Url_images}/close.png') no-repeat 50% 50%;
   }
   .previous{
-    background: url('../images/arrows.png') no-repeat 0 0;
+    background: url('@{Url_images}/arrows.png') no-repeat 0 0;
   }
   .next{
-    background: url('../images/arrows.png') no-repeat 100% 0;
+    background: url('@{Url_images}/arrows.png') no-repeat 100% 0;
   }
   .content.loading {
-    background-image: url('../images/loading.gif');
+    background-image: url('@{Url_images}/loading.gif');
   }
 }

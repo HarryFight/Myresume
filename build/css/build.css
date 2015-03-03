@@ -316,7 +316,7 @@ ul,li{list-style: none}
   width: 50px;
   height: 28px;
   margin-left: -25px;
-  background: url('../images/down.png');
+  background: url('http://7vzrbt.com1.z0.glb.clouddn.com/down.png');
   z-index: 99;
 }
 .active .down {
@@ -359,14 +359,14 @@ ul,li{list-style: none}
   margin-right: 30px;
 }
 #zoom .close {
-  background: transparent url('../images/close.png') no-repeat 50% 50%;
+  background: transparent url('http://7vzrbt.com1.z0.glb.clouddn.com/close.png') no-repeat 50% 50%;
 }
 #zoom .previous {
-  background: url('../images/arrows.png') no-repeat 0 0;
+  background: url('http://7vzrbt.com1.z0.glb.clouddn.com/arrows.png') no-repeat 0 0;
 }
 #zoom .next {
-  background: url('../images/arrows.png') no-repeat 100% 0;
+  background: url('http://7vzrbt.com1.z0.glb.clouddn.com/arrows.png') no-repeat 100% 0;
 }
 #zoom .content.loading {
-  background-image: url('../images/loading.gif');
+  background-image: url('http://7vzrbt.com1.z0.glb.clouddn.com/loading.gif');
 }
