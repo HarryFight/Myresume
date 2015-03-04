@@ -41,8 +41,6 @@
                     <p>怀着对大学的憧憬我于是又加入了<a href="http://hongyan.cqupt.edu.cn/">红岩网校</a>（一个校园网络开发团队）</p>
                     <p>再然后，</p>
                     <p>初识前端并产生浓厚兴趣，开始了我的前端之路。</p>
-
-                    <div class="tip"><a href="#work/1">→</a></div>
                 </div>
             </div>
             <div class="slide">
