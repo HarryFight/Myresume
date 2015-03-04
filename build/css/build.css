@@ -224,6 +224,8 @@ ul,li{list-style: none}
 .main .page3 ul .rd:hover div,
 .main .page3 ul .tools:hover div {
   background-image: -webkit-linear-gradient(left, #f5c9f6, #8aebf9);
+  background-image: -moz-linear-gradient(left, #f5c9f6, #8aebf9);
+  background-image: linear-gradient(left, #f5c9f6, #8aebf9);
 }
 .main .page3 ul .a:hover div {
   width: 70%;
